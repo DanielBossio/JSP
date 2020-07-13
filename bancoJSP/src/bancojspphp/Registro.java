@@ -226,6 +226,8 @@ public class Registro extends javax.swing.JFrame {
                 else{
                     Usuario u = gson.fromJson(json, Usuario.class);
                     InicioUsuario iu = new InicioUsuario(u);
+                    iu.setVisible(true);
+                    this.dispose();
                 }
             }
         } catch (IOException ex) {
