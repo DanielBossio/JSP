@@ -16,6 +16,8 @@ public class BancoJSPPHP {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Ingreso i = new Ingreso();
+        i.setVisible(true);
     }
     
 }
