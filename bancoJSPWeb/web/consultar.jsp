@@ -20,7 +20,7 @@
     Gson gson = new Gson();
     String json ="";
     for (Usuario us : users){
-        if (us.getCuenta().equals(cuenta)){
+        if (us.getCuenta().equals(cuenta) && us.getClave().equals(clave)){
             json = gson.toJson(us);
             break;
         }
